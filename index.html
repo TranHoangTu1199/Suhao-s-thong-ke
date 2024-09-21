@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THỐNG KÊ HÀNG HÓA</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="reloadBtn"></div>
+        <input type="text" name="" id="" class="searchBox" placeholder="Nhập tên hoặc mã hàng">
+    </header>
+    
+    <div class="main">
+        <div class="sidebar">
+            <div style="padding: 7px; font-weight: bolder; background-color: rgb(255, 255, 255); text-align: center; border-radius: 10px 10px 0 0;"> Lọc </div>
+            <div class="once-line" style="margin: 0; width: 100%;"></div>
+            <div style="padding: 7px; padding-top: 15px;">
+                <b>Tháng:</b>
+                <select name="dog-month" class="dog-month">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <b>Năm:</b>
+                <select name="dog-year" class="dog-year"></select>
+                <label class="edit">edit</label>
+            </div>
+            <div class="once-line"></div>
+            <div class="shirts"><b>Loại</b></div>
+            <div class="edit" style="margin-left: calc(var(--sidebar-size) - 60px);">edit</div>
+            <div class="once-line"></div>
+            <div class="actor"><b>Shop</b></div>
+            <div class="edit" style="margin-left: calc(var(--sidebar-size) - 60px);">edit</div>
+            <div class="once-line"></div>
+            <div style="margin-left: 15px;"><input type="checkbox" class="boLocCheck"> <label for="" class="boLoc">Bật chọn lọc</label></div>
+        </div>
+        <div class="buttonBox">
+            <div class="addBtn"></div>
+            <div class="sideBtn"></div>
+        </div>
+        <div class="mylist"></div>
+        <div class="editBox">
+            <div class="editlist"></div>
+            <input type="button" value="Add" class="editBoxBtn" style="width: 50px; margin-left: 10px;">
+            <input type="button" value="Apply" class="editBoxBtn" style="margin-left: calc(var(--edit-box-width) - 220px)">
+            <input type="button" value="Cancel" class="editBoxBtn">
+        </div>
+        <div class="addShirtBox">
+            <div class="addShirtTypeBox">
+                <img src="icon/image.png" alt="" class="addImage">
+                <div class="addImageBtn"><input type="file" name="file-input" id="image-input" accept="image/*"></div>
+                <div style="width: 100%; margin-top: 25px; display: inline-block;">
+                    <label for="" style="user-select: none;">Name: </label>
+                    <input type="text" name="" id="" class="addBoxType">
+                </div>
+                <div style="width: 100%; display: inline-block; margin-bottom: 20px; margin-top: 20px;">
+                    <label for="" style="user-select: none;">Size: </label>
+                    <input type="text" name="" id="" class="addBoxType" style="width: 170px;">
+                    <label for="" style="user-select: none;">Mã: #</label>
+                    <input type="number" name="" id="" class="addBoxType" style="width: 55px;" value="0">
+                </div>
+                <div style="width: 100%; display: inline-block; margin-bottom: 20px; margin-top: 0px; user-select: none;">
+                    <label for="">Ngày: </label>
+                    <select name="" id="" class="addShirtSelect"></select>/
+                    <select name="" id="" class="addShirtSelect"></select>/
+                    <select name="" id="" class="addShirtSelect"></select>
+                </div>
+                <div style="width: 100%; display: inline-block; margin-bottom: 20px; margin-top: 0px; user-select: none;">
+                    <label for="">Actor: </label>
+                    <select name="" id="" class="addShirtSelect" style="width: 24%;"></select>
+                    <label for=""> Shirt: </label>
+                    <select name="" id="" class="addShirtSelect" style="width: 43%;"></select>
+                </div>
+                <div class="addColors"></div>
+            </div>
+            <input type="button" value="Add" class="addShirtBtn">
+            <input type="button" value="Apply" class="addShirtBtn" style="margin-left: calc(100% - 180px);">
+            <input type="button" value="Cancel" class="addShirtBtn">
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
